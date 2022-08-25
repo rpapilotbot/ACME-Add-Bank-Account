@@ -1,0 +1,121 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ACME_Logouy" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_str_ACME_Bank_Account_Page" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:ACME_Logouy.in_str_ACME_Bank_Account_Page>
+    <InArgument x:TypeArguments="x:String" />
+  </this:ACME_Logouy.in_str_ACME_Bank_Account_Page>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1153.33333333333,458</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ACME_Logouy_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ACME_Logout" sap:VirtualizedContainerService.HintSize="476,830.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Logout&quot;]" />
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: ACME System 1 - Add Account" sap:VirtualizedContainerService.HintSize="434,469.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="44139b29-5e90-4b5a-a22a-9f9e579b3d62" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,251.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Log Out'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="44139b29-5e90-4b5a-a22a-9f9e579b3d62" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/bank/account" DesignTimeRectangle="1716, 117, 120, 75" ElementType="Text" FriendlyName="'Log Out'" FullSelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' type='' class='' check:innerText='Log Out' /&gt;" Guid="71770d8a-2cca-4e22-9c20-986aaccab7a1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHwAAABPCAYAAAAp8KG9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQYSURBVHhe7ZtNS+NAGMf9LP0iwXtgP0DBg+C9IIiXpT2Ie6oXeyteZEHCgtAFoQsLEYR66JqD0ENJD1IPQg6FHAo5FJ6dZCZpXsY29aWWPv+BH+jMk5fOLzPPTKo7hMKq7Px7eCDABwhnxk6lUiHABwhnBoQzA8KZAeHMgHBmQDgzIJwZEM4MCGcGhDMDwpkB4cyAcGZAODMgnBkQzgwIZwaEMwPCmQHhzIBwZkA4MyCcGRDODAhnBoQzA8KZAeHMgHBmrE24NZL/kO7+0rdvGmbDot7QIz+Q9x2VwCdv2COrYWqPWR2T6tcuOVe6ts8BwgvsU7vvyZsNi5A8HrrkCjxf1YniP17Svvb48tTv5AnX2ScQnsGg03tlNRhTVzOSzUaH3DhkaFE1174K8bUg/Iswzh2KZvDAJetAHxNxYJErA2lwYehjSgDhGQyqnXfJnaSS6Ezk0McO1b9p4g/aZI98CmYqVkzF7nV9hU41knv0bo817Vn2b8Yy+KmTjHJ5vE+9k2J8tu2UemqWSJd1iN9Q4WJqvZvnUf9F5dCpqsiPwGTEiTL1otjxRP4aqPrl123TIHpYPLIPde059roklYt72ZV15YXXyOqn7lF9vu5Z8biPZjOFn/RE14gS5tHv6SnTpGacYz2bjqM6gy4Hssq/b5KZxBpU/6NGoShLr3toC9VRJFm69gLxKJ0LLi9cgild0XLksNRPrU1yopGuOm+vI0fa1KFWIfaYbDVRLL1u/JD5PTrVtReA8IWUF16l7nMYqe+4kPiBiM51oYb3yNLGlu7UhhI+G1Bb114AwhdSXnixI/NkOuqXG/0c9JvLYzXtc96aw8fUWTmHSyA84otGeGotUGaVXv39nlW6BMIVq+VwNdLem8NDksXi2/bh8jMG5Jzn4iut7D2regiPWWmVXk3OnV+l165d+SJFlHKduuKbNjGrpF+vxscGTouMpD69W8gKj1+tjm+qSd1ns3bh4cY4mL7Cs031KH7ZPlzk2R+pByG9D/fT+3BxTlVffhSJh+rWSx6U+HzR9ZXosGjfpR/FWztRJuPUMQF50Q+56f5Krj/CzxPGbuU+fGHJbInECL2ws2/awm+ryr5pm3rk/KxR59VpdjHm0SXZb/i2LJwBBi/zJyOYhCJNNfpzwnfr1BX3HBfvby1zrs9gbcK/BoM6T2FXio5u6Nr5sQXC5XYq8B1qq+1RjHmm1gJiQddM1XNmC4Qb1OqraTH8cmUk8637kiR1sZJe36Jo09mSKT38y5GBWCClEu4sIH/0kX+dsh1seQ4HeSCcGRDODAhnBoQzA8KZAeHMgHBmQDgzIJwZEM4MCGcGhDMDwpkB4cyAcGZAODMgnBkQzgwIZwaEMwPCmQHhzIBwZkA4MyCcGRDOigr9B0TJcDIzWkw5AAAAAElFTkSuQmCC" InformativeScreenshot="ecdb11a5dc4a9f4cbdab776e17919087.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Add Account' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="81, 117, 243, 75" ElementType="Text" FriendlyName="'ACME System 1'" FullSelectorArgument="&lt;webctrl tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='navbar-brand' aaname='ACME System 1' check:innerText='ACME System 1' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAReSURBVFhHvZdtbFNlFMcf3SxUfI0miLAEWdShCV+EGD9oUJBJAobwQb8IGklkKEQkcy8MZK90tGsnZbxsvkDmxsYkS8QFPhDYLIy+sbv2rhW3dYPFbGyVbYwJJMu2wzm3Prd317ZCc+uHf9vnPC/n13PPc57nMrZX6EPdQo39zyKf1wgAZJWQ2sJtzYVrkw+lDT9G5UbBZWB5TmC7XIlRHgnXJ4hSyecwAYwxAzawM/1EoKFSvLEh97eBjOw4xedmNg9k7LSFRO2sloEMg2Po0x3n+4tYMUaiUIr0SAiAiL5xwfrGqyvSt69hiZZuXzv6cwP+cQVAoRveqQtsizRBS33vHV6cTAD5agA0rG7o+SLSpHg0ODG9aGlFR+vy+kCl0l4p3HgpKkC6RgAA8GxSqQfY5zZgm22wq3XwFO+zOIeiA6z5OQyQctBXpTd6BdwZwrsNPVZuV2vJD3/YWOFl9xNmr5hULGwiW8v1OxvZpmZg5SKw7a2Y8e3Ax5c5g9EB1p4MA+hNnjssH7dlth2WHusMcrta8yt8wHLswIpwbEHbUW5P/e4KsK0XJDX2jBVw+30DPGkR7awIt8pOJ7xR03WO29VadNg/Ke1tLDJPfyvuUfbtbu5fn+MIvqK0HYmVAzMAzKJTAdCsXEQpBJimMQQwx+TNjzRm6PbUQ/x3lWc4cQC60nYZYOEhP+jxsTxqbAfMp3JurxZHNAY44p/iAHpFBB63eIF9jbmBJVhn9Bi5vdanPYAcASUA/mtgu7H24+H2nLVDttdoDZAaBWAB7Q4CwLo/d38cAE9Z7hsg4iOIC+B9BcDsfR6XdGrhFltW3XWe29VKq/JPSAAGHFsiyPs9LgBlJcQk8mGFA5ZlhxX1gTPcrlbKobCjOWavidvjAnjreEAG+Ph03yn21SVgmZfg9druAW5XK9mI2Y5HOct2gFUIbuH25w/EAfBmTRjgqH9ks1RK6VDBx9B5a+IF3sc1DbCE5TqoBEvb7drfE/N431xrx4MDrKwPA5D0Zeg8FxehwXvckHfh+icmVzCt7vfRxTkt/VmMzopinLv1IrxW03VTOTdaBKpjAbynOo6b/hzfwj46hxmO/ZQPGGZdGYac2plYZOgOSU4+s8HoFKxSzk2hHKBHg3VgntUnnxExI6AGIH3Y1NfGdmAufInHKk2ik48umBgRsusK3LDhbL9c6biYAZ1suyglMUbpILfX+R8QgNTUO77sg8beX58xeuAxrO3JeL7Pt4jjG3+5+lPf3UldpDlvH+++mXqgY/LlSj8srw1kcfsxMcZhFA1ASx0WYgDglSzhl9IfPcNpUQHwUro20iStNQsf47+v5ZjN6072lpy4Mrqw3BV81eSYKSPKjCq1D0ptc4Qx/6UK4a8XjY6hdcmUoJi86FsCCL2aIUQSdszGRHsYvylMWusRFNuLotoReh2UXs1CDXpXo9cl2l5ElwjxtblPEn50o0ZQQUmGf74ToZlro0+h8x4tMHhuvyezngAAAABJRU5ErkJggg==" InformativeScreenshot="dac99309897d5b80f79e4759840e165c.png" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Add Account' /&gt;" Url="[in_str_ACME_Bank_Account_Page]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Ended Logout&quot;]" />
+  </Sequence>
+</Activity>
